@@ -117,13 +117,8 @@ describe Game do
     end
 
     def score player_one_scores, player_two_scores
-      player_one_scores.times do
-        g.player_one_scores
-      end
-
-      player_two_scores.times do
-        g.player_two_scores
-      end
+      player_one_scores.times { g.player_one_scores }
+      player_two_scores.times { g.player_two_scores }
     end
   end
 end
